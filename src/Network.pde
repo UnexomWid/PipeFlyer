@@ -1,6 +1,6 @@
 /*
- * NEAT_flyer - an AI that learns to fly through obstacles by using Neural Networks and NEAT.
- * Copyright (C) 2018-2019 UnexomWid
+ * PipeFlyer - an AI that learns to fly through obstacles by using Neural Networks and Genetic Algorithms.
+ * Copyright (C) 2019 UnexomWid
 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -72,11 +72,11 @@ public class Network {
     for(int u = 1; u < this.layers.length; u++) {
       for(int l = 0; l < this.layers[u].neurons.length; l++) {
         for(int k = 0; k < this.layers[u].neurons[l].weights.length; k++) {
-          if(random(0, 1) < NEAT_flyer.mutationChance)
+          if(random(0, 1) < PipeFlyer.mutationChance)
             this.layers[u].neurons[l].weights[k] = random(-2, 2);
         }
         
-        if(random(0, 1) < NEAT_flyer.mutationChance) {
+        if(random(0, 1) < PipeFlyer.mutationChance) {
           this.layers[u].neurons[l].bias = random(-1, 1);
         }
       }

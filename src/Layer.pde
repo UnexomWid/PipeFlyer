@@ -1,6 +1,6 @@
 /*
- * NEAT_flyer - an AI that learns to fly through obstacles by using Neural Networks and NEAT.
- * Copyright (C) 2018-2019 UnexomWid
+ * PipeFlyer - an AI that learns to fly through obstacles by using Neural Networks and Genetic Algorithms.
+ * Copyright (C) 2019 UnexomWid
 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

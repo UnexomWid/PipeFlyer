@@ -1,6 +1,6 @@
 /*
- * NEAT_flyer - an AI that learns to fly through obstacles by using Neural Networks and NEAT.
- * Copyright (C) 2018-2019 UnexomWid
+ * PipeFlyer - an AI that learns to fly through obstacles by using Neural Networks and Genetic Algorithms.
+ * Copyright (C) 2019 UnexomWid
 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
 public class Player extends Rectangle {
    
   public Player() {
-    super(new PVector(width / 10, height / 2), NEAT_flyer.playerImage.width, NEAT_flyer.playerImage.height);
+    super(new PVector(width / 10, height / 2), PipeFlyer.playerImage.width, PipeFlyer.playerImage.height);
     this.vel = new PVector(0, 0);
     this.acc = new PVector(0, 0);
     this.dead = false;
@@ -37,7 +37,7 @@ public class Player extends Rectangle {
   public void fly() {
     //this.vel.mult(0);
     this.vel.mult(0);
-    this.applyForce(NEAT_flyer.flyForce);
+    this.applyForce(PipeFlyer.flyForce);
   }
   
   public void applyForce(PVector acc) {
@@ -58,7 +58,7 @@ public class Player extends Rectangle {
   public void show() {
     if(!this.dead) {
        beginShape();
-       texture(NEAT_flyer.playerImage);
+       texture(PipeFlyer.playerImage);
        vertex(this.pos.x, this.pos.y, 0, 0);
        vertex(this.pos.x + this.w, this.pos.y, this.w, 0);
        vertex(this.pos.x + this.w, this.pos.y + this.h, this.w, this.h);

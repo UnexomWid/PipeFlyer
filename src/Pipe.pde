@@ -1,6 +1,6 @@
 /*
- * NEAT_flyer - an AI that learns to fly through obstacles by using Neural Networks and NEAT.
- * Copyright (C) 2018-2019 UnexomWid
+ * PipeFlyer - an AI that learns to fly through obstacles by using Neural Networks and Genetic Algorithms.
+ * Copyright (C) 2019 UnexomWid
 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,17 +19,17 @@
 public class Pipe {
    
   public Pipe() {
-    float pipeHeight = height - NEAT_flyer.pipeSpaceHeight;
+    float pipeHeight = height - PipeFlyer.pipeSpaceHeight;
     
-    this.top = new Rectangle(new PVector(width * 1.5, 0), NEAT_flyer.pipeWidth, random(0.1, 0.9) * pipeHeight);
-    this.bottom = new Rectangle(new PVector(width * 1.5, this.top.h + NEAT_flyer.pipeSpaceHeight), NEAT_flyer.pipeWidth, pipeHeight - this.top.h);
+    this.top = new Rectangle(new PVector(width * 1.5, 0), PipeFlyer.pipeWidth, random(0.1, 0.9) * pipeHeight);
+    this.bottom = new Rectangle(new PVector(width * 1.5, this.top.h + PipeFlyer.pipeSpaceHeight), PipeFlyer.pipeWidth, pipeHeight - this.top.h);
   }
   
   public Pipe(float offset) {
-    float pipeHeight = height - NEAT_flyer.pipeSpaceHeight;
+    float pipeHeight = height - PipeFlyer.pipeSpaceHeight;
     
-    this.top = new Rectangle(new PVector(offset, 0), NEAT_flyer.pipeWidth, random(0.1, 0.9) * pipeHeight);
-    this.bottom = new Rectangle(new PVector(offset, this.top.h + NEAT_flyer.pipeSpaceHeight), NEAT_flyer.pipeWidth, pipeHeight - this.top.h);
+    this.top = new Rectangle(new PVector(offset, 0), PipeFlyer.pipeWidth, random(0.1, 0.9) * pipeHeight);
+    this.bottom = new Rectangle(new PVector(offset, this.top.h + PipeFlyer.pipeSpaceHeight), PipeFlyer.pipeWidth, pipeHeight - this.top.h);
   }
   
   public Rectangle top;
@@ -37,8 +37,8 @@ public class Pipe {
   public Rectangle bottom;
   
   public void update() {
-   this.top.pos.x -= NEAT_flyer.pipeSpeed;
-   this.bottom.pos.x -= NEAT_flyer.pipeSpeed;
+   this.top.pos.x -= PipeFlyer.pipeSpeed;
+   this.bottom.pos.x -= PipeFlyer.pipeSpeed;
   }
   
   public void show() {
