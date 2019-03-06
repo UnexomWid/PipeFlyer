@@ -18,6 +18,11 @@ None.
 
 This sketch was created for testing and experimenting purposes. There are better ways to accomplish what this sketch accomplishes.
 
+# Running the sketch
+
+The AI starts learning automatically. You can control the framerate of the sketch by using the *W* and *S* keys. Holding down *W* speeds up the sketch (up to 960 fps), while 
+holding down *S* slows down the sketch(down to 60 fps). The current framerate, as well as the target framerate, is displayed on the bottom-right.
+
 # How it works
 
 First, a population of randomly initialized Neural Networks is created. Each member of the population is called a *player*, and decides every frame if it should jump or not.
