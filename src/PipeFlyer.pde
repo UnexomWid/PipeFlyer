@@ -62,7 +62,7 @@ void draw() {
     targetFrameRate += 50;
     frameRate(targetFrameRate);
   }
-  //Slow down.
+  // Slow down.
   if(keyPressed && (key == 's' || key == 'S') && targetFrameRate > 109) {
     targetFrameRate -= 50;
     frameRate(targetFrameRate); 
