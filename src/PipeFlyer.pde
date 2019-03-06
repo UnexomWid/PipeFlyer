@@ -33,7 +33,6 @@ private static PImage playerImage;
 private static ArrayList<Player> players;
 private static ArrayList<Pipe> pipes;
 
-// This could be done better, but it works for now.
 private static Network[] nets;
 
 private static int deadCount = 0;
