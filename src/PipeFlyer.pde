@@ -24,7 +24,7 @@ public static float pipeSpaceHeight = 175;
 public static float pipeSpeed = 5;
 
 // Mutation chance and population size.
-public static float mutationChance = 0.6;
+public static float mutationChance = 0.1;
 public static int playerCount = 200;
 
 // Helper stuff.
