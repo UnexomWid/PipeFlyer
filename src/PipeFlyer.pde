@@ -142,11 +142,11 @@ boolean collides(Player player) {
 // New random network.
 Network createNetwork() {
  Layer inputLayer = new Layer(6, 0);
- Layer hiddenLayer1 = new Layer(16, 6);
- Layer hiddenLayer2 = new Layer(16, 16);
+ Layer hiddenLayer0 = new Layer(16, 6);
+ Layer hiddenLayer1 = new Layer(16, 16);
  Layer outputLayer = new Layer(2, 16);
  
- return new Network(new Layer[] { inputLayer, hiddenLayer1, hiddenLayer2, outputLayer });
+ return new Network(new Layer[] { inputLayer, hiddenLayer0, hiddenLayer1, outputLayer });
 }
 
 /* 
