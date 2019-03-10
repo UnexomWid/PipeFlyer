@@ -134,9 +134,7 @@ void drawStatus() {
 
 // Edge collision.
 boolean collides(Player player) {
- if(player.pos.y < 0 || (player.pos.y + playerImage.height) > height)
-   return true;
- return false;
+ return (player.pos.y < 0 || (player.pos.y + playerImage.height) > height);
 }
 
 // New random network.
